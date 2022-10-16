@@ -1,0 +1,68 @@
+package sesliharfreturnnum;
+
+import java.util.Scanner;
+
+public class sesliharfreturnnum {
+
+	public static void main(String[] args) {
+		String text;
+		
+		char x;
+		int i;
+		
+		Scanner scn = new Scanner(System.in);
+		System.out.println("Enter text: ");
+		text= scn.nextLine();
+		
+		for(i=0; i<text.length(); i++) {
+			x=text.charAt(i);
+			
+			if(x =='a' || x=='A') {
+				text=text.replace('a','1');
+				text=text.replace('A','1');
+		    }
+			
+			if(x =='e' || x =='e') {
+				text=text.replace('e','2');
+				text=text.replace('E','2');
+		    }
+			
+			if(x =='ı' || x=='I') {
+				text=text.replace('ı','3');
+				text=text.replace('I','3');
+		    }
+				
+			
+			if(x =='i' || x=='İ') {
+				text=text.replace('i','4');
+				text=text.replace('İ','4');
+		    }
+				
+			
+			if(x =='o' || x=='O') {
+				text=text.replace('o','5');
+				text=text.replace('O','5');
+		    
+			}
+			if(x =='ö' || x=='Ö') {
+				text=text.replace('ö','6');
+				text=text.replace('Ö','6');
+		    
+				
+			}
+			if(x =='u' || x=='U') {
+				text=text.replace('u','7');
+				text=text.replace('U','7');
+		    
+				
+			}
+			if(x =='ü' || x=='Ü') {
+				text=text.replace('ü','8');
+				text=text.replace('Ü','8');
+			}
+		}
+		
+		System.out.println(text);
+	}
+
+}
